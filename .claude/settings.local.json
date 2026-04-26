@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv \"03_cosine_similarity.ipynb\" \"04_cosine_similarity.ipynb\")",
+      "Bash(mv \"04_als_model.ipynb\" \"05_als_model.ipynb\")",
+      "Bash(mv \"05_evaluation.ipynb\" \"06_evaluation.ipynb\")"
+    ]
+  }
+}
