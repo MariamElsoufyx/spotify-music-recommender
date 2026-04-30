@@ -4,7 +4,19 @@
       "Bash(mv \"03_cosine_similarity.ipynb\" \"04_cosine_similarity.ipynb\")",
       "Bash(mv \"04_als_model.ipynb\" \"05_als_model.ipynb\")",
       "Bash(mv \"05_evaluation.ipynb\" \"06_evaluation.ipynb\")",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(xargs wc *)",
+      "Bash(python3)",
+      "Bash(awk '{print $9, $5}')",
+      "PowerShell([System.Environment]::GetEnvironmentVariable\\(\"SPARK_HOME\", \"User\"\\))",
+      "Bash(mkdir -p /c/hadoop/bin)",
+      "Bash(curl -L -o /c/hadoop/bin/winutils.exe \"https://github.com/cdarlint/winutils/raw/master/hadoop-3.3.6/bin/winutils.exe\")",
+      "Read(//c/hadoop/bin/**)",
+      "Bash(curl -L -o /c/hadoop/bin/hadoop.dll \"https://github.com/cdarlint/winutils/raw/master/hadoop-3.3.6/bin/hadoop.dll\")",
+      "Bash(curl -L --progress-bar -o \"D:/Projects/spotify-music-recommender/data/raw/million_song/millionsongsubset.tar.gz\" \"http://static.echonest.com/millionsongsubset.tar.gz\")",
+      "Bash(tar -xzf millionsongsubset.tar.gz)",
+      "Bash(conda run *)",
+      "Bash(\"C:/Users/Mariam/anaconda3/envs/spotify-recommender/python.exe\" scripts/inspect_msd.py)"
     ]
   }
 }

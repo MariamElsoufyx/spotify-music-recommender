@@ -35,6 +35,10 @@ DATASETS = [
         "slug": "tonygordonjr/spotify-dataset-2023",
         "dest": RAW_DIR / "spotify_2023",
     },
+    {
+        "slug": "andrewmvd/spotify-playlists",
+        "dest": RAW_DIR / "spotify_playlists",
+    },
 ]
 
 
