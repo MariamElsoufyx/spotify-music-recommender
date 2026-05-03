@@ -1,11 +1,4 @@
-"""
-Download all Kaggle datasets into data/raw/.
-Requirements:
-  - pip install kaggle
-  - Place your kaggle.json API token at ~/.kaggle/kaggle.json
-Run:
-  python scripts/download_data.py
-"""
+
 
 import os
 import sys
