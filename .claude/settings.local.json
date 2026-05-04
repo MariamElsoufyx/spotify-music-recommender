@@ -22,7 +22,10 @@
       "Bash(C:/Users/Mariam/anaconda3/envs/spotify-recommender/python.exe -c \"import pyspark; print\\('pyspark', pyspark.__version__\\); import pyspark.find_spark_home as f; print\\(f.find_spark_home\\(\\)\\)\")",
       "PowerShell($ProgressPreference='SilentlyContinue'; Invoke-WebRequest -Uri 'https://github.com/cdarlint/winutils/raw/master/hadoop-3.3.5/bin/hadoop.dll' -OutFile 'C:\\\\hadoop\\\\bin\\\\hadoop.dll' -UseBasicParsing; Invoke-WebRequest -Uri 'https://github.com/cdarlint/winutils/raw/master/hadoop-3.3.5/bin/winutils.exe' -OutFile 'C:\\\\hadoop\\\\bin\\\\winutils.exe' -UseBasicParsing; Get-ChildItem C:\\\\hadoop\\\\bin\\\\ | Where-Object { $_.Name -in 'hadoop.dll','winutils.exe' } | Format-Table Name, Length)",
       "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\('C:\\\\hadoop\\\\bin\\\\hadoop.dll'\\)[0..1]; \"First bytes: $\\([char]$bytes[0]\\)$\\([char]$bytes[1]\\)\"; $first200 = Get-Content 'C:\\\\hadoop\\\\bin\\\\hadoop.dll' -TotalCount 1 -ErrorAction SilentlyContinue; $first200 | Select-Object -First 1)",
-      "PowerShell($dll = [System.IO.File]::ReadAllBytes\\('C:\\\\hadoop\\\\bin\\\\hadoop.dll'\\); $text = [System.Text.Encoding]::ASCII.GetString\\($dll\\); if \\($text -match 'access0'\\) { 'access0 symbol: PRESENT' } else { 'access0 symbol: MISSING' }; & 'C:\\\\hadoop\\\\bin\\\\winutils.exe' systeminfo 2>&1 | Select-Object -First 3)"
+      "PowerShell($dll = [System.IO.File]::ReadAllBytes\\('C:\\\\hadoop\\\\bin\\\\hadoop.dll'\\); $text = [System.Text.Encoding]::ASCII.GetString\\($dll\\); if \\($text -match 'access0'\\) { 'access0 symbol: PRESENT' } else { 'access0 symbol: MISSING' }; & 'C:\\\\hadoop\\\\bin\\\\winutils.exe' systeminfo 2>&1 | Select-Object -First 3)",
+      "Bash(python -c \"import requests; print\\(requests.__version__\\)\")",
+      "Bash(awk -F',' 'NR>1 && NR<10000 && $4+0>0 {if\\($4<min||min==\"\"\\)min=$4; if\\($4>max\\)max=$4} END{print \"DS1 genres_v2 \\(col4 duration_ms\\):\", \"min=\"min, \"max=\"max}' \"D:/Projects/spotify-music-recommender/data/raw/dataset_of_songs/genres_v2.csv\")",
+      "Bash(awk -F',' 'NR>1 && NR<10000 && $17+0>0 {if\\($17<min||min==\"\"\\)min=$17; if\\($17>max\\)max=$17} END{print \"DS1 genres_v2 \\(col17 duration_ms\\):\", \"min=\"min, \"max=\"max}' \"D:/Projects/spotify-music-recommender/data/raw/dataset_of_songs/genres_v2.csv\")"
     ]
   }
 }
