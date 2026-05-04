@@ -26,7 +26,10 @@
       "Bash(mapping)",
       "Bash(python fix_cell.py)",
       "Bash(del fix_cell.py)",
-      "Bash(awk 'NR>=24 && NR<=32' D:/Projects/spotify-music-recommender/notebooks/02_preprocessing.ipynb)"
+      "Bash(awk 'NR>=24 && NR<=32' D:/Projects/spotify-music-recommender/notebooks/02_preprocessing.ipynb)",
+      "Bash(python -c \"import json,sys; nb=json.load\\(sys.stdin\\); print\\('cells:', len\\(nb['cells']\\)\\); [print\\(i, c['cell_type'], c['source'][:1] if c['source'] else ''\\) for i,c in enumerate\\(nb['cells']\\)]\")",
+      "Bash(python \"D:/Projects/spotify-music-recommender/scripts/inspect_msd.py\")",
+      "Bash(python -c \"import json,sys; nb=json.load\\(sys.stdin\\); print\\(json.dumps\\(nb['metadata'],indent=2\\)\\); print\\('---'\\); print\\('nbformat:', nb.get\\('nbformat'\\), nb.get\\('nbformat_minor'\\)\\)\")"
     ]
   }
 }
