@@ -42,6 +42,3 @@ Thumbs.db
 # Logs
 *.log
 logs/
-#outpus
-outputs/outputs/train_test_split/
-outputs/outputs/plots/
